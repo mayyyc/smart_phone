@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import LockScreen from "./LockScreen";
+import Keypad from "./Keypad";
+import Calling from "./Calling";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [screen, setScreen] = useState<0 | 1 | 2>(0);
+  const renderScreen = () => {
+    switch (screen) {
+      case 0:
+        return <LockScreen onUnlock={() => setScreen(1)} />;
+      case 1:
+        return <Keypad onCall={() => setScreen(2)} />;
+      case 2:
+        return <Calling onHangUp={() => setScreen(0)} />;
+    }
+  };
+  return <div className="App">{renderScreen()}</div>;
 }
 
 export default App;
