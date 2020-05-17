@@ -1,8 +1,17 @@
 .what {
+  border: 2px solid #c30000;
+  height: 64px;
+  width: 64px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  bottom: 16px;
-  width: 100%;
-  left: 0;
+  bottom: 100px;
+  left: 50px;
+}
+.question {
+  width: 32px;
 }
 .modal {
   display: flex;

@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import "./What.css";
-
+import question from "./question.svg";
 const What = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <div>
       <button className="what" onClick={() => setShowModal(true)}>
-        <span role="img" aria-label="Triple Question Mark">
-          ❓❓❓
-        </span>
+        <img className="question" src={question} alt="what" />
       </button>
       {showModal && (
         <div className="modal">
