@@ -31,15 +31,14 @@ const What = () => {
                 So I designed this number suggestion algorithm. Based on the
                 previous number you type and the digit you're at, the algorithm
                 will try to "guess" the most possible next number you're about
-                to type. The current dataset is from the total 46 contacts on my
-                phone.
+                to type. All the effort is to make it easier for you to dial.
+                (The current dataset is from the total 46 contacts on my phone.)
               </p>
-              {/* <p>
-                Smooth transition, intuitive interaction, instant feedback and
-                more. With the industry's best practice in mind, the app is keen
-                to deliver an enjoyable and aesthetically engaging user
-                interface.
-              </p> */}
+              <p>
+                Intuitive interaction, instant feedback, dark mode and more.
+                With the industry's best practice in mind, the app is keen to
+                deliver an enjoyable and aesthetically engaging user interface.
+              </p>
               <p>
                 Try call someone with this revolutionary smart phone app, get
                 ready for the mind-blowing dialing experience.
