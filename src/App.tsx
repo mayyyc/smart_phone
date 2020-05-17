@@ -4,7 +4,7 @@ import Keypad from "./Keypad";
 import Calling from "./Calling";
 
 function App() {
-  const [screen, setScreen] = useState<0 | 1 | 2>(1);
+  const [screen, setScreen] = useState<0 | 1 | 2>(0);
   const [number, setNumber] = useState("");
   const renderScreen = () => {
     switch (screen) {
