@@ -1,3 +1,9 @@
+.what {
+  position: absolute;
+  bottom: 16px;
+  width: 100%;
+  left: 0;
+}
 .modal {
   display: flex;
   align-items: center;
@@ -6,6 +12,7 @@
   height: 100%;
   width: 100%;
   top: 0;
+  left: 0;
 }
 
 .modal-overlay {
@@ -16,8 +23,25 @@
   opacity: 0.6;
 }
 .modal-container {
-  width: 50%;
-  height: 60%;
-  background-color: white;
+  width: 80%;
+  max-width: 500px;
+  height: 80%;
+  background-color: #f2f2f2;
+  color: #0d0d0d;
   z-index: 1;
+  overflow: scroll;
+  padding: 16px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  color: #0d0d0d;
+}
+
+.what-content {
+  text-align: left;
 }

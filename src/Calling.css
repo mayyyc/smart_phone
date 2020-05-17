@@ -1,24 +1,26 @@
-.lock {
+.calling {
   height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-
-.time {
-  font-size: 4em;
-}
-
-.datetime {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+}
+.name {
   height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
-.unlock {
-  border: 2px solid #1db954;
+.tech {
+}
+.action {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hangup {
+  background-color: #c30000;
   height: 64px;
   width: 64px;
   border-radius: 32px;
@@ -28,6 +30,7 @@
   position: absolute;
   bottom: 100px;
 }
-.app {
+.hang {
   width: 32px;
+  transform: rotate(-135deg);
 }

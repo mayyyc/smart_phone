@@ -1,6 +1,8 @@
 import React from "react";
 import Clock from "react-live-clock";
 import "./LockScreen.css";
+import What from "./What";
+import phone from "./phone.svg";
 
 interface ILockScreenProps {
   onUnlock: Function;
@@ -8,15 +10,20 @@ interface ILockScreenProps {
 
 const LockScreen = ({ onUnlock }: ILockScreenProps) => {
   return (
-    <>
-      <div className="Clock">
-        <Clock />
+    <div className="lock">
+      <div className="datetime">
+        <time className="time">
+          <Clock />
+        </time>
+        <div className="date">
+          <Clock format="dddd, MMMM D" />
+        </div>
       </div>
-      <div className="Date">
-        <Clock format="dddd, MMMM D" />
-      </div>
-      <button onClick={() => onUnlock()}>Unlock your very smart phone</button>
-    </>
+      <button className="unlock" onClick={() => onUnlock()}>
+        <img className="app" src={phone} alt="app" />
+      </button>
+      <What />
+    </div>
   );
 };
 

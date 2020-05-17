@@ -1,0 +1,107 @@
+.keypad {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.input {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delete {
+  margin-left: 8px;
+  font-size: large;
+}
+.suggestion {
+  font-size: small;
+  color: #bfbfbf;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.pad {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  width: 240px;
+  /* width: 200px; */
+  min-height: 360px;
+  height: 55%;
+}
+.key {
+  background-color: #595959;
+  height: 64px;
+  width: 64px;
+  /* width: 50px;
+  height: 50px; */
+  border-radius: 32px;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+}
+.more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+.down {
+  width: 10px;
+  display: block;
+  animation-name: down;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  position: relative;
+  margin-top: 4px;
+}
+.call {
+  background-color: #1db954;
+  height: 64px;
+  width: 64px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone {
+  width: 32px;
+}
+@keyframes down {
+  0% {
+    top: 0px;
+  }
+  6% {
+    top: 1px;
+  }
+  12% {
+    top: 2px;
+  }
+  18% {
+    top: 1px;
+  }
+  24% {
+    top: 0px;
+  }
+  30% {
+    top: 1px;
+  }
+  36% {
+    top: 2px;
+  }
+  42% {
+    top: 1px;
+  }
+  48% {
+    top: 0px;
+  }
+  100% {
+    top: 0px;
+  }
+}
