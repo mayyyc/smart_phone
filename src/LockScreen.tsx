@@ -1,19 +1,22 @@
 import React from "react";
 import Clock from "react-live-clock";
-import moment from "moment";
+import "./LockScreen.css";
+
 interface ILockScreenProps {
   onUnlock: Function;
 }
 
 const LockScreen = ({ onUnlock }: ILockScreenProps) => {
   return (
-    <div>
+    <>
       <div className="Clock">
         <Clock />
       </div>
-      <div className="Date">{moment().format("dddd, MMMM D")}</div>
-      <button onClick={() => onUnlock()}>Unlock your smart phone</button>
-    </div>
+      <div className="Date">
+        <Clock format="dddd, MMMM D" />
+      </div>
+      <button onClick={() => onUnlock()}>Unlock your very smart phone</button>
+    </>
   );
 };
 
