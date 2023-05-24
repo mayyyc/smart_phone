@@ -6,7 +6,12 @@
 }
 
 .time {
-  font-size: 4em;
+  font-size: 6em;
+  font-weight: 600;
+}
+.date {
+  font-size: 2em;
+  color: #bfbfbf;
 }
 
 .datetime {
